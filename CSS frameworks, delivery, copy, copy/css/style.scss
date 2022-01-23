@@ -1,0 +1,170 @@
+
+
+
+$colours: (
+
+    colourBorderAndBackground :#c32c72,
+    colourHeading :  #463F3A,
+    colorCardBackground: #F4F3EE,
+    colorBottomCardBackground: #FFFFFF,
+    colorBody: #e2e2e2,
+    colorNav: #F4F3EE,
+
+    );
+
+    $customStyling: (
+
+      borderRadius: 10%,
+    );
+
+
+     $squareSize: (
+
+     square: 15rem,
+     );
+    
+
+
+
+
+    h1 {
+        color: map-get($colours, colourHeading);
+     
+        
+     }
+
+     .card {
+
+        background-color: map-get($colours, colorCardBackground);
+        border: none;
+
+         border-radius: map-get($customStyling, borderRadius);
+
+    
+         width:map-get($squareSize, square);
+         height:map-get($squareSize, square);
+         margin: 20px;
+     
+     }
+
+li {
+  color: #c32c72;
+}
+
+a.active {
+
+  color: #c32c72;
+}
+
+//width_ 100% is the problem
+/*this is a class eligible to recieve margins as this references the actual columns, the cards are within the columns*/
+
+
+ 
+
+     span {
+      border-radius: map-get($customStyling, borderRadius); /*this map gives ut the variable that is the same as for the cards*/
+   
+     }
+
+     span.border border-danger {
+       width:initial;
+       column-gap: 500px;
+
+
+     }
+
+     .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+
+      color: #c32c72;
+     }
+     .navbar {
+
+      font-size: 1.3rem;
+     }
+     a.navbar-brand {font-size: 2rem;}
+  
+     h1 {
+
+      font-size:xx-large;
+      margin: 5vh 0vh 5vh;
+     
+     }
+  
+.border:nth-child(1) {
+
+ border:  3px solid map-get($colours, colourBorderAndBackground) !important;
+}
+
+span.border.border-danger {
+
+  border:3px solid  map-get($colours, colourBorderAndBackground)!important; ;
+}
+
+
+span.border.border-light {
+
+  border:3px solid  #fff !important ;
+}
+
+
+     $grid-columns: 12 !default;
+$grid-gutter-width: 30px !default;
+
+.bg-light {
+
+  background-color:  map-get($colours, colorNav) !important;
+}
+
+div.col-md-6:nth-child(6) > div:nth-child(1) {
+
+  background-color:  map-get($colours, colourBorderAndBackground);
+}
+
+
+div.col-md-6:nth-child(3) > div:nth-child(1) {
+
+  background-color:  map-get($colours, colorBottomCardBackground);
+}
+
+
+div.col-md-6:nth-child(8) > div:nth-child(1) {
+
+  background-color: map-get($colours, colorBottomCardBackground);
+}
+
+
+.footer {
+
+  background-color:  map-get($colours, colorNav) !important;
+
+}
+
+footer {
+
+  background-color: #F4F3EE;
+  margin: 0;
+  margin-top: 25vh;
+  padding: 10px;
+  text-indent: 5vw;
+
+
+}
+
+
+
+p:nth-child(1) { 
+  float: inline-end;
+  
+ overflow: hidden;
+ margin-right: 5vw;
+}
+
+
+
+body {
+   background-color: map-get($colours, colorBody);
+  
+
+}
+
